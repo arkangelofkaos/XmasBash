@@ -47,7 +47,6 @@ module.exports = (player1, player2, modifier1, modifier2) => {
   result = firstMod(result, player1, player2, {modifier: modifier1, modifierPlayer: 0});
   result = firstMod(result, player1, player2, {modifier: modifier2, modifierPlayer: 1});
   result = mama(result, modifier1, modifier2);
-  // 'elves in the shelves', 'mama who'
 
   return result;
 };

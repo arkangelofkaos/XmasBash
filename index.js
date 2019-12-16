@@ -43,6 +43,8 @@ inquirer
         }
       ])
       .then(ans => {
-        console.log(game(answers.player1, answers.player2, ans.modifier1, ans.modifier2));
+        const p = ['Player 1', 'Player 2'];
+        const g = game(answers.player1, answers.player2, ans.modifier1, ans.modifier2);
+        console.log(`${p[g]} wins`);
       }, console.error);
   }, console.error);
