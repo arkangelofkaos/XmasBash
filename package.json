@@ -1,0 +1,17 @@
+{
+  "name": "xmasbash",
+  "version": "1.0.0",
+  "description": "Codurance kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  },
+  "dependencies": {
+    "inquirer": "^7.0.1"
+  }
+}
