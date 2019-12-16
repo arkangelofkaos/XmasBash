@@ -28,22 +28,25 @@ const elves = (result, playerNumber) => {
   return result === -1 ? playerNumber : result
 }
 
+const mama = (result, modifier1, modifier2) => {
+  return [modifier1, modifier2].includes('mama who') ? -1 : result;
+}
+
+const firstMod = (result, player1, player2, {modifier, modifierPlayer} = {}) => {
+  if (modifier === 'barrel, lock & shock') {
+    result = bls(result, player1, player2);
+  } else if (modifier === 'elves in the shelves') {
+    result = elves(result, modifierPlayer);
+  }
+  return result;
+}
+
 module.exports = (player1, player2, modifier1, modifier2) => {
   let result = initialGame(player1, player2);
 
-  if (modifier1 === 'barrel, lock & shock') {
-    result = bls(result, player1, player2);
-  } else if (modifier1 === 'elves in the shelves') {
-    result = elves(result, 0)
-  }
-
-  if (modifier2 === 'barrel, lock & shock') {
-    result = bls(result, player1, player2);
-  } else if (modifier2 === 'elves in the shelves') {
-    result = elves(result, 1)
-  }
-
-
+  result = firstMod(result, player1, player2, {modifier: modifier1, modifierPlayer: 0});
+  result = firstMod(result, player1, player2, {modifier: modifier2, modifierPlayer: 1});
+  result = mama(result, modifier1, modifier2);
   // 'elves in the shelves', 'mama who'
 
   return result;

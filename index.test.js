@@ -42,7 +42,6 @@ const expectedOutcomesWithBLS = [
   ['santa', 'santa', 'barrel, lock & shock', 'elves in the shelves', 1],
   ['santa', 'jack', 'barrel, lock & shock', 'elves in the shelves', 0],
 
-
   ['jack', 'grinch', 'elves in the shelves', 'barrel, lock & shock', 0],
   ['jack', 'jack', 'elves in the shelves', 'barrel, lock & shock', 0],
   ['jack', 'santa', 'elves in the shelves', 'barrel, lock & shock', 1],
@@ -51,7 +50,17 @@ const expectedOutcomesWithBLS = [
   ['grinch', 'santa', 'elves in the shelves', 'barrel, lock & shock', 0],
   ['santa', 'grinch', 'elves in the shelves', 'barrel, lock & shock', 1],
   ['santa', 'santa', 'elves in the shelves', 'barrel, lock & shock', 0],
-  ['santa', 'jack', 'elves in the shelves', 'barrel, lock & shock', 0]
+  ['santa', 'jack', 'elves in the shelves', 'barrel, lock & shock', 0],
+
+  ['jack', 'grinch', 'mama who', 'barrel, lock & shock', -1],
+  ['jack', 'jack', 'mama who', 'barrel, lock & shock', -1],
+  ['jack', 'santa', 'mama who', 'barrel, lock & shock', -1],
+  ['grinch', 'grinch', 'mama who', 'barrel, lock & shock', -1],
+  ['grinch', 'jack', 'mama who', 'barrel, lock & shock', -1],
+  ['grinch', 'santa', 'mama who', 'barrel, lock & shock', -1],
+  ['santa', 'grinch', 'mama who', 'barrel, lock & shock', -1],
+  ['santa', 'santa', 'mama who', 'barrel, lock & shock', -1],
+  ['santa', 'jack', 'mama who', 'barrel, lock & shock', -1]
 ];
 
 describe('1st modification set', () => {
