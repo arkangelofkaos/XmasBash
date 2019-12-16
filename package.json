@@ -4,7 +4,8 @@
   "description": "Codurance kata",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "fmt": "prettier --config .prettierrc.json --ignore-path .prettierignore --write"
   },
   "author": "",
   "license": "MIT",
