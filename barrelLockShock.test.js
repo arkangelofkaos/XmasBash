@@ -11,7 +11,7 @@ describe('Barrel, Lock and Shock modifier', () => {
         expect(applyBarrelLockAndShockModifier(normalResult, player1, player2, modifier1, modifier2)).toEqual(-1);
     });
 
-    xtest(`when both modifiers are BLS, then outcome is normal`, () => {
+    test(`when both modifiers are BLS, then outcome is normal`, () => {
         const player1 = "jack";
         const player2 = "santa";
         const modifier1 = "barrel, lock & shock";
