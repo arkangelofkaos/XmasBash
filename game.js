@@ -17,20 +17,20 @@ const initialGame = (player1, player2) => {
   }
 
   return 0;
-}
+};
 
 const bls = (result, player1, player2) => {
   if (player1 === player2) return result;
   return result === -1 ? -1 : (result + 1) % 2;
-}
+};
 
 const elves = (result, playerNumber) => {
   return result === -1 ? playerNumber : result
-}
+};
 
 const mama = (result, modifier1, modifier2) => {
   return [modifier1, modifier2].includes('mama who') ? -1 : result;
-}
+};
 
 const firstMod = (result, player1, player2, {modifier, modifierPlayer} = {}) => {
   if (modifier === 'barrel, lock & shock') {
@@ -39,7 +39,7 @@ const firstMod = (result, player1, player2, {modifier, modifierPlayer} = {}) => 
     result = elves(result, modifierPlayer);
   }
   return result;
-}
+};
 
 module.exports = (player1, player2, modifier1, modifier2) => {
   let result = initialGame(player1, player2);
