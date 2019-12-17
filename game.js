@@ -28,7 +28,7 @@ const elves = (result, playerNumber) => {
   return result === -1 ? playerNumber : result
 };
 
-const mama = (result, modifier1, modifier2) => {
+const applyMamaWhoModifier = (result, modifier1, modifier2) => {
   return [modifier1, modifier2].includes('mama who') ? -1 : result;
 };
 
@@ -46,7 +46,7 @@ module.exports = (player1, player2, modifier1, modifier2) => {
 
   result = firstMod(result, player1, player2, {modifier: modifier1, modifierPlayer: 0});
   result = firstMod(result, player1, player2, {modifier: modifier2, modifierPlayer: 1});
-  result = mama(result, modifier1, modifier2);
+  result = applyMamaWhoModifier(result, modifier1, modifier2);
 
   return result;
 };
