@@ -1,6 +1,6 @@
 
-const applyBarrelLockAndShockModifier = (player1, player2, modifier1, modifier2) => {
-    return -1;
+const applyBarrelLockAndShockModifier = (normalResult, player1, player2, modifier1, modifier2) => {
+    return normalResult;
 };
 
 module.exports = applyBarrelLockAndShockModifier;
