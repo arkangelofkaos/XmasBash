@@ -14,13 +14,13 @@ inquirer
     {
       type: 'list',
       name: 'player1',
-      message: "Player 1's card",
+      message: 'Player 1\'s card',
       choices: CHOICES
     },
     {
       type: 'list',
       name: 'player2',
-      message: "Player 2's card",
+      message: 'Player 2\'s card',
       choices: CHOICES
     }
   ])
