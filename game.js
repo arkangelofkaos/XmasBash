@@ -10,12 +10,12 @@ const initialGame = (player1, player2) => {
   if (player1 === player2) return -1;
 
   switch (player1) {
-    case 'jack':
-      return Number(player2 === 'grinch');
-    case 'grinch':
-      return Number(player2 === 'santa');
-    case 'santa':
-      return Number(player2 === 'jack');
+  case 'jack':
+    return Number(player2 === 'grinch');
+  case 'grinch':
+    return Number(player2 === 'santa');
+  case 'santa':
+    return Number(player2 === 'jack');
   }
 
   return 0;
@@ -27,7 +27,7 @@ const bls = (result, player1, player2) => {
 };
 
 const elves = (result, playerNumber) => {
-  return result === -1 ? playerNumber : result
+  return result === -1 ? playerNumber : result;
 };
 
 const firstMod = (result, player1, player2, {modifier, modifierPlayer} = {}) => {

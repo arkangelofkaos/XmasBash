@@ -31,7 +31,7 @@ const expectedOutcomesWithBLS = [
   ['santa', 'grinch', 'barrel, lock & shock', 'barrel, lock & shock', 0],
   ['santa', 'santa', 'barrel, lock & shock', 'barrel, lock & shock', -1],
   ['santa', 'jack', 'barrel, lock & shock', 'barrel, lock & shock', 1],
-  
+
   ['jack', 'grinch', 'barrel, lock & shock', 'elves in the shelves', 0],
   ['jack', 'jack', 'barrel, lock & shock', 'elves in the shelves', 1],
   ['jack', 'santa', 'barrel, lock & shock', 'elves in the shelves', 1],

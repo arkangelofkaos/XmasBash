@@ -1,5 +1,6 @@
 # Software Craftsmanship Dojo - Christmas Bash
 
-* Kata Details: https://gitlab.com/MiyamotoAkira/christmasbash/
-* Meetup Event: https://www.meetup.com/london-software-craftsmanship/events/266913865/
-* Original Repo: https://github.com/Berkmann18/XmasBash 
+Coding kata at a Codurance Coding Dojo
+
+<!-- https://www.meetup.com/london-software-craftsmanship/events/266913865/ -->
+[Instructions](https://gitlab.com/MiyamotoAkira/christmasbash).
