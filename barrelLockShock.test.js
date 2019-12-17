@@ -20,4 +20,14 @@ describe('Barrel, Lock and Shock modifier', () => {
 
         expect(applyBarrelLockAndShockModifier(normalResult, player1, player2, modifier1, modifier2)).toEqual(0);
     });
+
+    test(`when player1 plays BLS, then outcome is reversed`, () => {
+        const player1 = "jack";
+        const player2 = "santa";
+        const modifier1 = "barrel, lock & shock";
+        const modifier2 = "something else";
+        const normalResult = 0;
+
+        expect(applyBarrelLockAndShockModifier(normalResult, player1, player2, modifier1, modifier2)).toEqual(1);
+    });
 });
