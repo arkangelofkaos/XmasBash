@@ -19,7 +19,7 @@ describe('Basic', () => {
       expect(game(player1, player2)).toEqual(outcome);
     });
   });
-})
+});
 
 const expectedOutcomesWithBLS = [
   ['jack', 'grinch', 'barrel, lock & shock', 'barrel, lock & shock', 1],
@@ -70,4 +70,4 @@ describe('1st modification set', () => {
       expect(game(player1, player2, modifier1, modifier2)).toEqual(outcome);
     });
   });
-})
+});
