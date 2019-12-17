@@ -4,6 +4,8 @@
  1: player 2 wins
 */
 
+const applyMamaWhoModifier = require('./mamaWho');
+
 const initialGame = (player1, player2) => {
   if (player1 === player2) return -1;
 
@@ -26,10 +28,6 @@ const bls = (result, player1, player2) => {
 
 const elves = (result, playerNumber) => {
   return result === -1 ? playerNumber : result
-};
-
-const applyMamaWhoModifier = (result, modifier1, modifier2) => {
-  return [modifier1, modifier2].includes('mama who') ? -1 : result;
 };
 
 const firstMod = (result, player1, player2, {modifier, modifierPlayer} = {}) => {
